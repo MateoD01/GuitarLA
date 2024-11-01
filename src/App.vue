@@ -9,6 +9,10 @@
     guitarras.value = db
   })
 
+  const agregarCarrito = (guitarra) => {
+        console.log(guitarra)
+    }
+
 </script>
 
 <template>
@@ -105,7 +109,8 @@
             <Guitarra
               v-for="guitarra in guitarras" 
               :guitarra="guitarra"
-            /> <!-- esto es un prop-->
+              @agregar-carrito="agregarCarrito"
+            /> <!-- esto es un prop y un component Event-->
         </div>
     </main>
 
@@ -119,6 +124,6 @@
 
 <style scoped>
   h1 {
-    color: chartreuse;
+    color: red;
   }
 </style>
