@@ -105,7 +105,7 @@
             <Guitarra
               v-for="guitarra in guitarras" 
               :guitarra="guitarra"
-            />
+            /> <!-- esto es un prop-->
         </div>
     </main>
 
